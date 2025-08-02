@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Loading...</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background: #000;
-        }
-
-        body {
-            background-image: url("TurflineRP.png");
-            background-size: 50%;   /* 👈 100% width, 60% height */
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-    </style>
+  <title>Loading...</title>
+  <style>
+    html, body {
+      margin: 0; padding: 0; height: 100%; width: 100%; background: #000;
+      overflow: hidden;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 100vw;          /* full viewport width */
+      height: 60vh;          /* 60% of viewport height */
+      object-fit: contain;   /* keeps full image, no cropping, no distortion */
+      background: #000;
+    }
+  </style>
 </head>
 <body>
+  <img src="TurflineRP.png" alt="Loading Background">
 </body>
 </html>
+
+
 
 
 
