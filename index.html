@@ -9,12 +9,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
     }
 
     img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
+      width: 120%;   /* Change this % to zoom horizontally */
+      height: 80%;   /* Change this % to zoom vertically */
+      object-fit: fill; /* Stretch image to fill the area, ignoring aspect ratio */
+      display: block;
     }
   </style>
 </head>
@@ -22,6 +24,8 @@
   <img src="TurflineRP_resized.png" alt="Loading Background">
 </body>
 </html>
+
+
 
 
 
